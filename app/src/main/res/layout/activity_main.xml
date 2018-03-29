@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:background="@drawable/main1"
+    android:layout_height="fill_parent" >
+
+    <Button
+        android:id="@+id/forw"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:text="Forward"
+        android:onClick="ford"
+        android:layout_marginTop="29dp"
+        android:background="#ffff00"
+        android:textColor="#000000"
+        android:layout_below="@+id/disconnect1"
+        android:layout_alignLeft="@+id/stp"
+        android:layout_alignStart="@+id/stp" />
+
+    <Button
+        android:id="@+id/Lef"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:text="Left"
+        android:layout_margin="15dp"
+        android:background="#ffff00"
+        android:layout_toLeftOf="@+id/stp"
+        android:layout_below="@+id/forw"
+        android:onClick="left"/>
+
+    <Button
+        android:id="@+id/stp"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:text="STOP"
+        android:background="#ff2211"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/forw"
+        android:layout_centerHorizontal="true"
+        android:onClick="stop"/>
+
+    <Button
+        android:id="@+id/rig"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:text="Right"
+        android:background="#ffff00"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/forw"
+        android:layout_toRightOf="@+id/stp"
+        android:onClick="right"/>
+
+    <Button
+        android:id="@+id/bck"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:background="#ffff00"
+        android:text="BAckward"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/stp"
+        android:layout_centerHorizontal="true"
+        android:onClick="backward"/>
+
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:layout_below="@id/bck"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="40dp"
+        android:text=""/>
+
+    <Button
+        android:id="@+id/go_to_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voice Command"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#ffb732"
+        android:onClick="give_command"/>
+
+    <Button
+        android:id="@+id/disconnect1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Disconnect"
+        android:onClick="resetConnection"/>
+
+    <Button
+        android:id="@+id/connect1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="CONNECT"
+        android:onClick="connect1"/>
+
+</RelativeLayout>
